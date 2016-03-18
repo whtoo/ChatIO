@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node --debug ./bin/www",
-    "dev": "DEBUG=myapp:* npm start"
+    "*nixdev": "DEBUG=myapp:* npm start",
+    "windev": "SET DEBUG=myapp:* & npm start"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

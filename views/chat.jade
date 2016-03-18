@@ -11,7 +11,7 @@ html
    script(src="//cdn.socket.io/socket.io-1.4.5.js")
    script(src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js")
    script(type='text/javascript').
-    var clientSocket = io('127.0.0.1:3030');
+    var clientSocket = io('192.168.0.156:3030');
     $('form').submit(function(){
       clientSocket.emit('chat message', $('#m').val());
     $('#m').val('');
